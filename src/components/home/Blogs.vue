@@ -9,7 +9,7 @@
             </div>
             <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-10">
                 <a id="blog1_link"
-                    class="lg:col-span-3 group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10 hover:scale-105 duration-200">
+                    class="lg:col-span-3 group p-6 sm:p-8 rounded-3xl bg-white/50 border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 shadow-2xl shadow-gray-600/10 hover:scale-105 duration-200">
                     <div class="relative overflow-hidden rounded-xl">
                         <img id="blog1_img" alt="art cover" loading="lazy" src="/images/bg_blog.png"
                             class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" />
@@ -34,7 +34,7 @@
                     </div>
                 </a>
                 <a id="blog2_link"
-                    class="lg:col-span-3 group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10 hover:scale-105 duration-200">
+                    class="lg:col-span-3 group p-6 sm:p-8 rounded-3xl bg-white/50 border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 shadow-2xl shadow-gray-600/10 hover:scale-105 duration-200">
                     <div class="relative overflow-hidden rounded-xl">
                         <img id="blog2_img" alt="art cover" loading="lazy" src="/images/bg_blog.png"
                             class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" />
@@ -59,7 +59,7 @@
                     </div>
                 </a>
                 <a id="blog3_link"
-                    class="lg:col-span-3 group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10 hover:scale-105 duration-200">
+                    class="lg:col-span-3 group p-6 sm:p-8 rounded-3xl bg-white/50 border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 shadow-2xl shadow-gray-600/10 hover:scale-105 duration-200">
                     <div class="relative overflow-hidden rounded-xl">
                         <img id="blog3_img" alt="art cover" loading="lazy" src="/images/bg_blog.png"
                             class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" />
@@ -84,7 +84,7 @@
                     </div>
                 </a>
                 <a href="https://blog.peckot.com"
-                    class="group flex bg-blog bg-cover bg-opacity-50 items-center justify-center p-6 sm:p-8 rounded-3xl border border-gray-100 dark:shadow-none dark:border-gray-700 shadow-2xl shadow-gray-600/10 hover:scale-105 duration-200">
+                    class="group flex bg-blog bg-cover items-center justify-center p-6 sm:p-8 rounded-3xl border border-gray-100 dark:shadow-none dark:border-gray-700 shadow-2xl shadow-gray-600/10 hover:scale-105 duration-200">
                     <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
                         更<br v-if="wx(880)">多<br v-if="wx(880)">内<br v-if="wx(880)">容<br v-if="wx(880)">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 64" fill="currentColor"
