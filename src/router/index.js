@@ -8,7 +8,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: HomeView,
     },
     // {
     //   path: '/signin',
@@ -28,7 +28,7 @@ const router = createRouter({
       component: AboutView,
       //beforeEnter: (to, from, next) => next('/'),
     },
-  ]
+  ],
 })
 
 export default router
