@@ -1,12 +1,7 @@
 <template>
   <div>
     <div class="mx-auto max-w-7xl px-6 md:px-12 xl:px-6">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        class="h-6 w-6 text-sky-500"
-      >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-sky-500">
         <path
           fill-rule="evenodd"
           d="M2.25 13.5a8.25 8.25 0 018.25-8.25.75.75 0 01.75.75v6.75H18a.75.75 0 01.75.75 8.25 8.25 0 01-16.5 0z"
@@ -22,18 +17,10 @@
         class="flex-row-reverse justify-between space-y-6 text-gray-600 md:flex md:gap-6 md:space-y-0 lg:items-center lg:gap-12"
       >
         <div class="md:5/12 lg:w-1/2">
-          <img
-            src="/images/pie.svg"
-            alt="image"
-            loading="lazy"
-            class="w-full"
-            draggable="false"
-          />
+          <img src="/images/pie.svg" alt="image" loading="lazy" class="w-full" draggable="false" />
         </div>
         <div class="md:7/12 lg:w-1/2">
-          <h2 class="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white">
-            我们的开发初衷
-          </h2>
+          <h2 class="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white">我们的开发初衷</h2>
           <p class="my-8 text-gray-600 dark:text-gray-300">
             自团队建立以来，我们一直致力于为更广大的用户群体提供更加便捷的操作体验，也将始终坚持我们的初衷。<br /><br />
             相比于冗杂、不易使用的功能，我们更享受去繁就简和标准一体化的开发方式。

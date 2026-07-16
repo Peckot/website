@@ -3,39 +3,16 @@
     <nav class="absolute z-10 w-full">
       <div class="mx-auto max-w-7xl px-6 md:px-12 xl:px-6">
         <div class="relative flex flex-wrap items-center justify-between gap-6 py-4 md:gap-0">
-          <input
-            id="toggle_nav"
-            aria-hidden="true"
-            type="checkbox"
-            name="toggle_nav"
-            class="peer hidden"
-          />
+          <input id="toggle_nav" aria-hidden="true" type="checkbox" name="toggle_nav" class="peer hidden" />
           <div class="relative z-20 flex w-full justify-between md:px-0 bg:w-max">
-            <a
-              href="/"
-              aria-label="logo"
-              class="flex items-center space-x-2"
-            >
-              <div
-                aria-hidden="true"
-                class="flex space-x-1"
-              >
-                <img
-                  class="h-10"
-                  src="/logo.svg"
-                  alt="Peckot"
-                />
+            <a href="/" aria-label="logo" class="flex items-center space-x-2">
+              <div aria-hidden="true" class="flex space-x-1">
+                <img class="h-10" src="/logo.svg" alt="Peckot" />
               </div>
               <span class="text-2xl font-bold text-gray-900 dark:text-white">Peckot Studios</span>
             </a>
             <div class="relative flex max-h-10 items-center bg:hidden">
-              <label
-                id="hamburger"
-                role="button"
-                for="toggle_nav"
-                aria-label="humburger"
-                class="relative -mr-6 p-6"
-              >
+              <label id="hamburger" role="button" for="toggle_nav" aria-label="humburger" class="relative -mr-6 p-6">
                 <div
                   id="line"
                   aria-hidden="true"
@@ -74,62 +51,35 @@
               'dark:border-gray-700 dark:bg-gray-800 dark:shadow-none',
             ]"
           >
-            <div
-              class="flex-auto text-gray-600 bg:ml-36 bg:w-auto bg:pt-0 bg:pr-4 dark:text-gray-300"
-            >
-              <ul
-                class="flex flex-col gap-6 font-medium tracking-wide bg:flex-row bg:gap-0 bg:text-sm"
-              >
+            <div class="flex-auto text-gray-600 bg:ml-36 bg:w-auto bg:pt-0 bg:pr-4 dark:text-gray-300">
+              <ul class="flex flex-col gap-6 font-medium tracking-wide bg:flex-row bg:gap-0 bg:text-sm">
                 <li>
-                  <a
-                    href="/about"
-                    :class="getPageClass('about')"
-                  >
+                  <a href="/about" :class="getPageClass('about')">
                     <span>关于我们</span>
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://docs.peckot.com"
-                    target="_self"
-                    :class="getPageClass()"
-                  >
+                  <a href="https://docs.peckot.com" target="_self" :class="getPageClass()">
                     <span>阅读文档</span>
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://blog.peckot.com"
-                    target="_self"
-                    :class="getPageClass()"
-                  >
+                  <a href="https://blog.peckot.com" target="_self" :class="getPageClass()">
                     <span>查看博客</span>
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://peckot.com/f/joinus/qq"
-                    target="_blank"
-                    :class="getPageClass()"
-                  >
+                  <a href="https://peckot.com/f/joinus/qq" target="_blank" :class="getPageClass()">
                     <span>QQ交流群</span>
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://peckot.com/f/joinus/bilibili"
-                    target="_blank"
-                    :class="getPageClass()"
-                  >
+                  <a href="https://peckot.com/f/joinus/bilibili" target="_blank" :class="getPageClass()">
                     <span>哔哩哔哩</span>
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://peckot.com/f/joinus/github"
-                    target="_blank"
-                    :class="getPageClass()"
-                  >
+                  <a href="https://peckot.com/f/joinus/github" target="_blank" :class="getPageClass()">
                     <span>Github</span>
                   </a>
                 </li>

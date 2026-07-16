@@ -2,14 +2,9 @@
   <div class="text-gray-600 dark:text-gray-300">
     <div class="mx-auto max-w-7xl px-6 md:px-12 xl:px-6">
       <div class="mb-20 space-y-4 px-6 md:px-0">
-        <h2 class="text-center text-2xl font-bold text-gray-800 md:text-4xl dark:text-white">
-          一些用户和开发者的评价
-        </h2>
+        <h2 class="text-center text-2xl font-bold text-gray-800 md:text-4xl dark:text-white">一些用户和开发者的评价</h2>
       </div>
-      <div
-        :class="{ 'col-2': wx(610) && ws(880), 'col-3': wx(880) }"
-        class="gap-8 space-y-8"
-      >
+      <div :class="{ 'col-2': wx(610) && ws(880), 'col-3': wx(880) }" class="gap-8 space-y-8">
         <div
           class="nobreak aspect-auto rounded-3xl border border-gray-100 bg-white p-6 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none"
         >
