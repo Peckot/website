@@ -1,5 +1,7 @@
 {
-    "routes": [
+  "installCommand": "corepack pnpm install --frozen-lockfile",
+  "buildCommand": "corepack pnpm build",
+  "routes": [
         {
             "src": "/(about|user)",
             "dest": "/index.html"
