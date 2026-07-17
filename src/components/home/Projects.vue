@@ -20,13 +20,23 @@
           'text-gray-600',
         ]"
       >
-        <div
-          v-for="project in projects" :key="project.id"
-          class="group relative bg-white transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-800"
+        <component
+          :is="project.available ? 'a' : 'article'"
+          v-for="project in projects"
+          :key="project.id"
+          :href="project.available ? project.link : undefined"
+          :class="[
+            'relative flex bg-white transition dark:bg-gray-800',
+            project.available && [
+              'group hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10',
+              'focus-visible:z-[1] focus-visible:outline-2 focus-visible:outline-offset-[-2px]',
+              'focus-visible:outline-secondary dark:focus-visible:outline-secondarydark',
+            ],
+          ]"
         >
           <div
             :style="project.image ? { '--project-image': `url(${project.image})` } : undefined"
-            :class="['relative space-y-10 bg-cover p-8 py-12 transition', { 'bg-project': project.image }]"
+            :class="['relative flex w-full flex-1 flex-col bg-cover p-8 py-12 transition', { 'bg-project': project.image }]"
           >
             <img
               :src="project.icon"
@@ -37,7 +47,7 @@
               loading="lazy"
               draggable="false"
             />
-            <div class="space-y-2">
+            <div class="mt-10 space-y-2">
               <h5 class="text-2xl font-semibold text-gray-800 transition group-hover:text-secondary dark:text-white group-hover:dark:text-secondarydark">
                 {{ project.name }}
               </h5>
@@ -45,17 +55,17 @@
                 {{ project.description }}
               </p>
             </div>
-            <a
+            <div
               v-if="project.available"
-              :href="project.link"
-              class="flex items-center justify-between text-gray-800 group-hover:text-secondary dark:text-white group-hover:dark:text-secondarydark"
+              class="mt-auto flex items-center justify-between pt-10 text-gray-800 group-hover:text-secondary dark:text-white group-hover:dark:text-secondarydark"
             >
               <span class="text-sm">查看详情</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                class="h-5 w-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+                aria-hidden="true"
+                class="h-5 w-5 text-2xl opacity-100 transition duration-300 sm:-translate-x-4 sm:opacity-0 sm:group-hover:translate-x-0 sm:group-hover:opacity-100 sm:group-focus-visible:translate-x-0 sm:group-focus-visible:opacity-100"
               >
                 <path
                   fill-rule="evenodd"
@@ -63,10 +73,10 @@
                   clip-rule="evenodd"
                 />
               </svg>
-            </a>
-            <span v-else class="flex items-center text-sm text-gray-500 dark:text-gray-400">敬请期待</span>
+            </div>
+            <span v-else class="mt-auto flex items-center pt-10 text-sm text-gray-500 dark:text-gray-400">敬请期待</span>
           </div>
-        </div>
+        </component>
       </div>
     </div>
   </div>
