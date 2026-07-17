@@ -14,9 +14,9 @@
       </div>
       <div
         :class="[
-          'mt-20 grid overflow-hidden sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4',
-          'divide-x divide-y divide-gray-100 rounded-3xl border border-gray-100',
-          'lg:divide-y-0 dark:divide-gray-700 dark:border-gray-700',
+          'mt-20 grid gap-px overflow-hidden sm:grid-cols-2 lg:grid-cols-4',
+          'rounded-3xl border border-gray-100 bg-gray-100',
+          'dark:border-gray-700 dark:bg-gray-700',
           'text-gray-600',
         ]"
       >
