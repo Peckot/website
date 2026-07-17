@@ -21,12 +21,12 @@
         ]"
       >
         <div
-          v-for="project in projects" :key="project.name"
+          v-for="project in projects" :key="project.id"
           class="group relative bg-white transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-800"
         >
           <div
-            :style="{ '--project-image': `url(${project.image})` }"
-            class="bg-project relative space-y-10 bg-cover p-8 py-12 transition"
+            :style="project.image ? { '--project-image': `url(${project.image})` } : undefined"
+            :class="['relative space-y-10 bg-cover p-8 py-12 transition', { 'bg-project': project.image }]"
           >
             <img
               :src="project.icon"
@@ -46,6 +46,7 @@
               </p>
             </div>
             <a
+              v-if="project.available"
               :href="project.link"
               class="flex items-center justify-between text-gray-800 group-hover:text-secondary dark:text-white group-hover:dark:text-secondarydark"
             >
@@ -63,6 +64,7 @@
                 />
               </svg>
             </a>
+            <span v-else class="flex items-center text-sm text-gray-500 dark:text-gray-400">敬请期待</span>
           </div>
         </div>
       </div>
@@ -74,32 +76,34 @@
 // storage for above mentioned projects
 const projects = [
   {
+    id: "uni-verse",
     icon: "/assets/burning_furnace.gif",
     name: "UNI-verse",
     description: "一个基于 Minecraft: Java Edition、由 Peckot Studios 长期运营的中型多人游戏服务器。",
     image: "/assets/bg_peckotmc.png",
     link: "https://uni-ver.se/",
+    available: true,
   },
   {
+    id: "project-2",
     icon: "https://cdn-icons-png.flaticon.com/512/4341/4341134.png",
     name: "项目II",
     description: "[项目简介]",
-    image: "/assets/project2.png",
-    link: "#",
+    available: false,
   },
   {
+    id: "project-3",
     icon: "https://cdn-icons-png.flaticon.com/512/4341/4341160.png",
     name: "项目III",
     description: "[项目简介]",
-    image: "/assets/project3.png",
-    link: "#",
+    available: false,
   },
   {
+    id: "project-n",
     icon: "https://cdn-icons-png.flaticon.com/512/4341/4341025.png",
     name: "项目N",
     description: "[项目简介]",
-    image: "/assets/project4.png",
-    link: "#",
+    available: false,
   },
 ];
 
