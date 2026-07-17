@@ -203,7 +203,7 @@ export default {
           articles.push(article)
         }
         for (let i = 0; i < 3; i++) {
-          document.getElementById(`blog${i + 1}_img`).src = articles[i].cover || '/images/bg_blog.png'
+          document.getElementById(`blog${i + 1}_img`).src = articles[i].cover || '/assets/bg_blog.png'
           document.getElementById(`blog${i + 1}_title`).innerHTML = articles[i].title || '标题获取失败'
           const desc = articles[i].desc
           document.getElementById(`blog${i + 1}_desc`).innerHTML =
@@ -237,13 +237,13 @@ export default {
 <style>
 @media (prefers-color-scheme: dark) {
   .bg-blog {
-    background-image: linear-gradient(rgba(20, 20, 20, 0.5), rgba(0, 0, 0, 0.5)), url(/images/bg_blog.png);
+    background-image: linear-gradient(rgba(20, 20, 20, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/bg_blog.png);
   }
 }
 
 @media (prefers-color-scheme: light) {
   .bg-blog {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)), url(/images/bg_blog.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)), url(/assets/bg_blog.png);
   }
 }
 </style>
