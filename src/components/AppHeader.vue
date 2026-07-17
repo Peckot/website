@@ -7,9 +7,9 @@
           <div class="relative z-20 flex w-full justify-between md:px-0 bg:w-max">
             <a href="/" aria-label="logo" class="flex items-center space-x-2">
               <div aria-hidden="true" class="flex space-x-1">
-                <img class="h-10" src="/logo.svg" alt="Peckot" />
+                <img class="h-10" src="/logo.svg" alt="Peckot" draggable="false" />
               </div>
-              <span class="text-2xl font-bold text-gray-900 dark:text-white">Peckot Studios</span>
+              <span class="text-3xl font-bold text-gray-900 dark:text-white">Peckot Studios</span>
             </a>
             <div class="relative flex max-h-10 items-center bg:hidden">
               <label id="hamburger" role="button" for="toggle_nav" aria-label="humburger" class="relative -mr-6 p-6">
@@ -80,7 +80,7 @@
                 </li>
                 <li>
                   <a href="https://peckot.com/f/joinus/github" target="_blank" :class="getPageClass()">
-                    <span>Github</span>
+                    <span>GitHub</span>
                   </a>
                 </li>
               </ul>
