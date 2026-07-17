@@ -17,7 +17,7 @@
         class="flex-row-reverse justify-between space-y-6 text-gray-600 md:flex md:gap-6 md:space-y-0 lg:items-center lg:gap-12"
       >
         <div class="md:5/12 lg:w-1/2">
-          <img src="/images/pie.svg" alt="image" loading="lazy" class="w-full" draggable="false" />
+          <img src="/assets/pie.svg" alt="image" loading="lazy" class="w-full" draggable="false" />
         </div>
         <div class="md:7/12 lg:w-1/2">
           <h2 class="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white">我们的开发初衷</h2>

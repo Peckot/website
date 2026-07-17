@@ -25,7 +25,7 @@
               id="blog1_img"
               alt="art cover"
               loading="lazy"
-              src="/images/bg_blog.png"
+              src="/assets/bg_blog.png"
               class="h-64 w-full object-cover transition duration-500 group-hover:scale-105"
             />
           </div>
@@ -71,7 +71,7 @@
               id="blog2_img"
               alt="art cover"
               loading="lazy"
-              src="/images/bg_blog.png"
+              src="/assets/bg_blog.png"
               class="h-64 w-full object-cover transition duration-500 group-hover:scale-105"
             />
           </div>
@@ -117,7 +117,7 @@
               id="blog3_img"
               alt="art cover"
               loading="lazy"
-              src="/images/bg_blog.png"
+              src="/assets/bg_blog.png"
               class="h-64 w-full object-cover transition duration-500 group-hover:scale-105"
             />
           </div>

@@ -30,7 +30,7 @@
         >
           <div class="bg-peckotmc relative space-y-8 bg-cover p-8 py-12 transition">
             <img
-              src="/images/burning_furnace.gif"
+              src="/assets/burning_furnace.gif"
               class="w-12"
               width="512"
               height="512"
@@ -182,13 +182,13 @@
 <style>
 @media (prefers-color-scheme: dark) {
   .bg-peckotmc {
-    background-image: linear-gradient(rgba(20, 20, 20, 0.5), rgba(0, 0, 0, 0.5)), url(/images/bg_peckotmc.png);
+    background-image: linear-gradient(rgba(20, 20, 20, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/bg_peckotmc.png);
   }
 }
 
 @media (prefers-color-scheme: light) {
   .bg-peckotmc {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)), url(/images/bg_peckotmc.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)), url(/assets/bg_peckotmc.png);
   }
 }
 </style>
