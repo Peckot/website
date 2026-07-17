@@ -26,33 +26,37 @@
               </label>
             </div>
           </div>
-          <!-- <div aria-hidden="true"
-                        class="fixed z-10 inset-0 h-screen w-screen bg-white/70 backdrop-blur-2xl origin-bottom scale-y-0 transition duration-500 peer-checked:origin-top peer-checked:scale-y-100 lg:hidden dark:bg-gray-900/70">
-          </div> -->
+
+          <!-- <div
+            aria-hidden="true"
+            :class="[
+              'fixed z-10 inset-0 h-screen w-screen scale-y-0',
+              'bg-white/70 backdrop-blur-2xl origin-bottom transition duration-500',
+              'peer-checked:origin-top peer-checked:scale-y-100 bg:hidden dark:bg-gray-900/70',
+            ]"
+          ></div> -->
           <div
             :class="[
-              // 定位、布局与初始状态
               'invisible absolute top-full right-0 z-20 flex-col flex-wrap justify-end gap-4',
               'origin-top translate-y-1 scale-95 p-6 opacity-0',
 
-              // 边框、背景与动效
               'rounded-3xl border border-gray-100 bg-white shadow-2xl shadow-gray-600/10',
               'transition-all duration-300',
 
-              // 菜单展开状态
+              // checked
               'peer-checked:visible peer-checked:scale-100 peer-checked:opacity-100',
 
-              // 桌面端布局
+              // bg
               'bg:visible bg:relative bg:flex bg:translate-y-0 bg:scale-100',
               'bg:flex-row bg:items-center bg:gap-0 bg:border-none bg:bg-transparent',
               'bg:p-0 bg:opacity-100 bg:shadow-none bg:peer-checked:translate-y-0',
 
-              // 深色模式
-              'dark:border-gray-700 dark:bg-gray-800 dark:shadow-none',
+              // dark
+              'dark:border-gray-700 dark:bg-gray-800 dark:shadow-none bg:dark:bg-transparent',
             ]"
           >
-            <div class="flex-auto text-gray-600 bg:ml-36 bg:w-auto bg:pt-0 bg:pr-4 dark:text-gray-300">
-              <ul class="flex flex-col gap-6 font-medium tracking-wide bg:flex-row bg:gap-0 bg:text-sm">
+            <div class="flex-auto text-gray-600 bg:w-auto bg:pt-4 bg:pr-4 dark:text-gray-300">
+              <ul class="flex flex-col gap-6 font-medium tracking-wide bg:flex-row bg:gap-0 bg:text-base">
                 <li>
                   <a href="/about" :class="getPageClass('about')">
                     <span>关于我们</span>
