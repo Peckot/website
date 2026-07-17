@@ -25,12 +25,14 @@
             <span class="whitespace-nowrap">
               不只是<span
                 class="text-gradient bg-gradient-to-br from-primary to-secondary bg-clip-text text-transparent dark:from-primarydark dark:to-secondarydark"
-                >专注开发</span>
+                >专注开发</span
+              >
             </span>
             <span class="whitespace-nowrap">
               更是<span
                 class="text-gradient bg-gradient-to-tl from-primary to-secondary bg-clip-text text-transparent dark:from-primarydark dark:to-secondarydark"
-                >构建梦想</span>
+                >构建梦想</span
+              >
             </span>
           </h1>
           <div class="mt-12 text-lg text-gray-700 dark:text-gray-300">

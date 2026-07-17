@@ -36,7 +36,10 @@
         >
           <div
             :style="project.image ? { '--project-image': `url(${project.image})` } : undefined"
-            :class="['relative flex w-full flex-1 flex-col bg-cover p-8 py-12 transition', { 'bg-project': project.image }]"
+            :class="[
+              'relative flex w-full flex-1 flex-col bg-cover p-8 py-12 transition',
+              { 'bg-project': project.image },
+            ]"
           >
             <img
               :src="project.icon"
@@ -48,10 +51,14 @@
               draggable="false"
             />
             <div class="mt-10 space-y-2">
-              <h5 class="text-2xl font-semibold text-gray-800 transition group-hover:text-secondary dark:text-white group-hover:dark:text-secondarydark">
+              <h5
+                class="text-2xl font-semibold text-gray-800 transition group-hover:text-secondary dark:text-white group-hover:dark:text-secondarydark"
+              >
                 {{ project.name }}
               </h5>
-              <p class="text-gray-700 transition group-hover:text-primary dark:text-gray-300 group-hover:dark:text-[#cc52dd]">
+              <p
+                class="text-gray-700 transition group-hover:text-primary dark:text-gray-300 group-hover:dark:text-[#cc52dd]"
+              >
                 {{ project.description }}
               </p>
             </div>
@@ -74,7 +81,9 @@
                 />
               </svg>
             </div>
-            <span v-else class="mt-auto flex items-center pt-10 text-sm text-gray-500 dark:text-gray-400">敬请期待</span>
+            <span v-else class="mt-auto flex items-center pt-10 text-sm text-gray-500 dark:text-gray-400"
+              >敬请期待</span
+            >
           </div>
         </component>
       </div>
@@ -86,66 +95,56 @@
 // storage for above mentioned projects
 const projects = [
   {
-    id: "uni-verse",
-    icon: "/assets/burning_furnace.gif",
-    name: "UNI-verse",
-    description: "一个基于 Minecraft: Java Edition、由 Peckot Studios 长期运营的中型多人游戏服务器。",
-    image: "/assets/bg_peckotmc.png",
-    link: "https://uni-ver.se/",
+    id: 'uni-verse',
+    icon: '/assets/burning_furnace.gif',
+    name: 'UNI-verse',
+    description: '一个基于 Minecraft: Java Edition、由 Peckot Studios 长期运营的中型多人游戏服务器。',
+    image: '/assets/bg_peckotmc.png',
+    link: 'https://uni-ver.se/',
     available: true,
   },
   {
-    id: "project-2",
-    icon: "https://cdn-icons-png.flaticon.com/512/4341/4341134.png",
-    name: "项目II",
-    description: "[项目简介]",
+    id: 'project-2',
+    icon: 'https://cdn-icons-png.flaticon.com/512/4341/4341134.png',
+    name: '项目II',
+    description: '[项目简介]',
     available: false,
   },
   {
-    id: "project-3",
-    icon: "https://cdn-icons-png.flaticon.com/512/4341/4341160.png",
-    name: "项目III",
-    description: "[项目简介]",
+    id: 'project-3',
+    icon: 'https://cdn-icons-png.flaticon.com/512/4341/4341160.png',
+    name: '项目III',
+    description: '[项目简介]',
     available: false,
   },
   {
-    id: "project-n",
-    icon: "https://cdn-icons-png.flaticon.com/512/4341/4341025.png",
-    name: "项目N",
-    description: "[项目简介]",
+    id: 'project-n',
+    icon: 'https://cdn-icons-png.flaticon.com/512/4341/4341025.png',
+    name: '项目N',
+    description: '[项目简介]',
     available: false,
   },
-];
+]
 
 export default {
   data() {
     return {
       projects,
-    };
+    }
   },
-};
+}
 </script>
 
 <style>
 .bg-project {
   background-size: cover;
   background-position: center;
-  background-image:
-    linear-gradient(
-      rgba(255,255,255,.6),
-      rgba(255,255,255,.5)
-    ),
-    var(--project-image);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)), var(--project-image);
 }
 
 @media (prefers-color-scheme: dark) {
   .bg-project {
-    background-image:
-      linear-gradient(
-        rgba(20,20,20,.5),
-        rgba(0,0,0,.5)
-      ),
-      var(--project-image);
+    background-image: linear-gradient(rgba(20, 20, 20, 0.5), rgba(0, 0, 0, 0.5)), var(--project-image);
   }
 }
 </style>
