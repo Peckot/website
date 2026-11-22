@@ -1,3 +1,38 @@
+<script setup>
+const projects = [
+  {
+    id: 'uni-verse',
+    icon: '/assets/burning_furnace.gif',
+    name: 'UNI-verse',
+    description: '一个基于 Minecraft: Java Edition、由 Peckot Studios 长期运营的中型多人游戏服务器。',
+    image: '/assets/bg_peckotmc.png',
+    link: 'https://uni-ver.se/',
+    available: true,
+  },
+  {
+    id: 'project-2',
+    icon: 'https://cdn-icons-png.flaticon.com/512/4341/4341235.png',
+    name: '敬请期待',
+    description: '敬请期待',
+    available: false,
+  },
+  {
+    id: 'project-3',
+    icon: 'https://cdn-icons-png.flaticon.com/512/4341/4341260.png',
+    name: '敬请期待',
+    description: '敬请期待',
+    available: false,
+  },
+  {
+    id: 'project-n',
+    icon: 'https://cdn-icons-png.flaticon.com/512/4341/4341035.png',
+    name: '敬请期待',
+    description: '敬请期待',
+    available: false,
+  },
+]
+</script>
+
 <template>
   <div>
     <div class="mx-auto max-w-7xl px-6 md:px-12 xl:px-6">
@@ -9,12 +44,12 @@
             clip-rule="evenodd"
           />
         </svg>
-        <h2 class="my-8 text-2xl font-bold text-gray-700 md:text-4xl dark:text-white">我们的在营项目</h2>
+        <h2 class="my-4 text-2xl font-bold text-gray-700 md:my-8 md:text-4xl dark:text-white">我们的在营项目</h2>
         <p class="text-lg text-gray-600 dark:text-gray-300">由 Peckot Studios 开发或维护的相关作品或产品</p>
       </div>
       <div
         :class="[
-          'mt-20 grid gap-px overflow-hidden sm:grid-cols-2 lg:grid-cols-4',
+          'mt-10 grid gap-px overflow-hidden sm:grid-cols-2 md:mt-20 lg:grid-cols-4',
           'rounded-3xl border border-gray-100 bg-gray-100',
           'dark:border-gray-700 dark:bg-gray-700',
           'text-gray-600',
@@ -91,51 +126,7 @@
   </div>
 </template>
 
-<script>
-// storage for above mentioned projects
-const projects = [
-  {
-    id: 'uni-verse',
-    icon: '/assets/burning_furnace.gif',
-    name: 'UNI-verse',
-    description: '一个基于 Minecraft: Java Edition、由 Peckot Studios 长期运营的中型多人游戏服务器。',
-    image: '/assets/bg_peckotmc.png',
-    link: 'https://uni-ver.se/',
-    available: true,
-  },
-  {
-    id: 'project-2',
-    icon: 'https://cdn-icons-png.flaticon.com/512/4341/4341134.png',
-    name: '项目II',
-    description: '[项目简介]',
-    available: false,
-  },
-  {
-    id: 'project-3',
-    icon: 'https://cdn-icons-png.flaticon.com/512/4341/4341160.png',
-    name: '项目III',
-    description: '[项目简介]',
-    available: false,
-  },
-  {
-    id: 'project-n',
-    icon: 'https://cdn-icons-png.flaticon.com/512/4341/4341025.png',
-    name: '项目N',
-    description: '[项目简介]',
-    available: false,
-  },
-]
-
-export default {
-  data() {
-    return {
-      projects,
-    }
-  },
-}
-</script>
-
-<style>
+<style scoped>
 .bg-project {
   background-size: cover;
   background-position: center;
