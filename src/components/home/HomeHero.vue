@@ -23,7 +23,7 @@ const intros = [
 </script>
 
 <template>
-  <div class="relative">
+  <section class="relative">
     <!-- Background illustration start -->
     <div aria-hidden="true" class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
       <div
@@ -35,13 +35,13 @@ const intros = [
     </div>
     <!-- Background illustration end -->
 
-    <div class="mx-auto max-w-7xl px-6 md:px-12 xl:px-6">
-      <div class="relative pt-32 bg:pt-48">
-        <div class="mx-auto text-center xl:w-2/3">
+    <div class="mx-auto w-full max-w-7xl px-6 md:px-12 xl:px-6">
+      <div class="relative grid gap-[clamp(1.5rem,6svh,4.5rem)] pt-18">
+        <div class="mx-auto grid w-full gap-[clamp(1.25rem,4svh,3rem)] text-center xl:w-2/3">
           <h1
             :class="[
               'flex flex-col items-center gap-y-1',
-              'text-5xl leading-tight font-bold text-gray-900',
+              'text-[clamp(2rem,12vw,3rem)] leading-tight font-bold text-gray-900',
               'sm:flex-row sm:justify-center sm:gap-x-[0.5em] sm:gap-y-0',
               'lg:text-6xl dark:text-white',
             ]"
@@ -59,22 +59,22 @@ const intros = [
               >
             </span>
           </h1>
-          <div class="mt-12 text-lg text-gray-700 dark:text-gray-300">
+          <div class="text-lg text-gray-700 dark:text-gray-300">
             <span>一个有着远大白日梦想的学生团队，</span><br class="sm:hidden" />
             <span>一个由计算机爱好者们组建运营的团队，</span><br />
             <span>一个用心雕琢细节与用户体验的团队。</span><br class="sm:hidden" />
             <span>在此打造——<span class="font-bold">更出色的产品与服务</span>。</span>
           </div>
-          <div class="mt-12 flex flex-wrap justify-center gap-x-6 gap-y-4">
+          <div class="flex flex-wrap justify-center gap-x-6 gap-y-4">
             <HomeButton text="关于我们" link="/about" :primary="true" />
             <HomeButton text="查看博客" link="https://blog.peckot.com" />
             <HomeButton text="阅读文档" link="https://docs.peckot.com" />
           </div>
-          <div class="mt-18 hidden justify-between border-y border-gray-100 py-8 sm:flex dark:border-gray-800">
+          <div class="hidden justify-between border-y border-gray-100 py-8 sm:flex dark:border-gray-800">
             <HomeIntroBlock v-for="intro in intros" :key="intro.id" :title="intro.title" :contents="intro.contents" />
           </div>
         </div>
-        <div class="mt-18 grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4">
+        <div class="grid grid-cols-2 sm:grid-cols-4">
           <HomePlatformIcon name="Vercel" image="/platforms/vercel.svg" link="https://vercel.com/home/" />
           <HomePlatformIcon name="GitHub" image="/platforms/github.svg" link="https://github.com" />
           <HomePlatformIcon name="Node.js" image="/platforms/nodejs.svg" link="https://nodejs.org/zh-cn/" />
@@ -82,5 +82,5 @@ const intros = [
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>

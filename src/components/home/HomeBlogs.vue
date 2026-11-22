@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="mx-auto max-w-7xl px-6 md:px-12 xl:px-6">
+  <section>
+    <div class="mx-auto w-full max-w-7xl px-6 md:px-12 xl:px-6">
       <div class="mb-10 space-y-2 text-center">
         <h2 class="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white">近期文章</h2>
         <p class="text-gray-600 italic lg:mx-auto lg:w-6/12 dark:text-gray-300">内容来自 Peckot Blog 博客</p>
@@ -177,7 +177,7 @@
         </a>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

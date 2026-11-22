@@ -34,8 +34,8 @@ const projects = [
 </script>
 
 <template>
-  <div>
-    <div class="mx-auto max-w-7xl px-6 md:px-12 xl:px-6">
+  <section>
+    <div class="mx-auto w-full max-w-7xl px-6 md:px-12 xl:px-6">
       <div class="md:w-2/3 lg:w-1/2">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-8 w-8 text-secondary">
           <path
@@ -123,7 +123,7 @@ const projects = [
         </component>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>

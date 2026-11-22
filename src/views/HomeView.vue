@@ -11,7 +11,7 @@ import Blogs from '@/components/home/HomeBlogs.vue'
 
 <template>
   <AppHeader />
-  <main class="mb-40 space-y-64">
+  <main class="home-sections">
     <Hero />
     <Projects />
     <Purpose />
@@ -19,5 +19,26 @@ import Blogs from '@/components/home/HomeBlogs.vue'
     <JoinNow />
     <Blogs />
   </main>
-  <AppFooter />
+  <AppFooter class="home-footer" />
 </template>
+
+<style scoped>
+@media screen {
+  .home-sections > section,
+  .home-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    min-height: 100svh;
+    padding-block: clamp(1.5rem, 4vh, 3rem);
+    scroll-snap-align: start;
+  }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  :global(html:has(.home-sections)) {
+    scroll-snap-type: y proximity;
+  }
+}
+</style>

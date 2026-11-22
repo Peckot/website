@@ -5,7 +5,7 @@ import FooterNav from '@/components/ui/FooterNav.vue'
 <!-- eslint-disable no-irregular-whitespace -->
 <template>
   <footer class="py-20 md:py-80">
-    <div class="mx-auto max-w-7xl md:px-12 xl:px-6">
+    <div class="mx-auto w-full max-w-7xl md:px-12 xl:px-6">
       <div class="m-auto md:w-10/12 lg:w-8/12 xl:w-6/12">
         <div
           :class="{ 'flex-wrap divide-y': ws(610), 'flex-nowrap divide-x': wx(610) }"

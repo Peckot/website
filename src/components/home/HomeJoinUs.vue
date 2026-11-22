@@ -3,7 +3,7 @@ import HomeButton from '@/components/ui/HomeButton.vue'
 </script>
 
 <template>
-  <div class="relative py-40">
+  <section class="relative">
     <div
       aria-hidden="true"
       class="absolute inset-0 m-auto grid h-max w-full grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
@@ -11,7 +11,7 @@ import HomeButton from '@/components/ui/HomeButton.vue'
       <div class="h-56 bg-gradient-to-br from-primary to-orange-400 blur-[106px] dark:from-blue-700"></div>
       <div class="h-32 bg-gradient-to-r from-yellow-400 to-red-300 blur-[106px] dark:to-indigo-600"></div>
     </div>
-    <div class="mx-auto max-w-7xl px-6 md:px-12 xl:px-6">
+    <div class="mx-auto w-full max-w-7xl px-6 md:px-12 xl:px-6">
       <div class="relative">
         <div class="flex items-center justify-center -space-x-2">
           <img
@@ -72,5 +72,5 @@ import HomeButton from '@/components/ui/HomeButton.vue'
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>

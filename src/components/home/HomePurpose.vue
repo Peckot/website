@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <div class="mx-auto max-w-7xl px-6 py-10 md:px-12 xl:px-6">
-      <div :class="['my-8 flex-row-reverse justify-between space-y-6', 'md:flex md:gap-6 md:space-y-0 lg:gap-12']">
+  <section>
+    <div class="mx-auto w-full max-w-7xl px-6 md:px-12 xl:px-6">
+      <div :class="['flex-row-reverse justify-between space-y-6', 'md:flex md:gap-6 md:space-y-0 lg:gap-12']">
         <div class="hidden lg:block lg:w-4/9">
           <img src="/assets/pie.svg" alt="image" loading="lazy" class="w-full" draggable="false" />
         </div>
@@ -72,5 +72,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>

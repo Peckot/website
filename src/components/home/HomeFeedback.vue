@@ -63,8 +63,8 @@ const feedbacks = [
 </script>
 
 <template>
-  <div class="text-gray-600 dark:text-gray-300">
-    <div class="mx-auto max-w-7xl px-6 md:px-12 xl:px-6">
+  <section class="text-gray-600 dark:text-gray-300">
+    <div class="mx-auto w-full max-w-7xl px-6 md:px-12 xl:px-6">
       <div class="mb-20 space-y-4 px-6 md:px-0">
         <h2 class="text-center text-2xl font-bold text-gray-800 md:text-4xl dark:text-white">一些用户和开发者的评价</h2>
       </div>
@@ -91,7 +91,7 @@ const feedbacks = [
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>
