@@ -1,7 +1,7 @@
 <script setup>
 import AppHeader from '@/components/layout/AppHeader.vue'
 import AppFooter from '@/components/layout/AppFooter.vue'
-import Purpose from '../components/home/Purpose.vue'
+import Purpose from '@/components/home/HomePurpose.vue'
 import Projects from '@/components/home/HomeProjects.vue'
 import Hero from '@/components/home/HomeHero.vue'
 import Feedback from '../components/home/Feedback.vue'
