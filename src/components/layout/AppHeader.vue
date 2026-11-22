@@ -6,7 +6,7 @@
           <input id="toggle_nav" aria-hidden="true" type="checkbox" name="toggle_nav" class="peer hidden" />
           <div class="relative z-20 flex w-full justify-between md:px-0 bg:w-max">
             <a href="/" aria-label="logo" class="flex items-center space-x-2">
-              <div aria-hidden="true" class="flex space-x-1">
+              <div aria-hidden="true" class="flex">
                 <img class="h-10" src="/logo.svg" alt="Peckot" draggable="false" />
               </div>
               <span class="text-3xl font-bold text-gray-900 dark:text-white">Peckot Studios</span>

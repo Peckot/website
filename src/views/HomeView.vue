@@ -1,6 +1,6 @@
 <script setup>
-import AppHeader from '../components/AppHeader.vue'
-import AppFooter from '../components/AppFooter.vue'
+import AppHeader from '@/components/layout/AppHeader.vue'
+import AppFooter from '@/components/layout/AppFooter.vue'
 import Purpose from '../components/home/Purpose.vue'
 import Projects from '../components/home/Projects.vue'
 import Hero from '../components/home/Hero.vue'
