@@ -6,12 +6,12 @@ import Projects from '@/components/home/HomeProjects.vue'
 import Hero from '@/components/home/HomeHero.vue'
 import Feedback from '@/components/home/HomeFeedback.vue'
 import JoinNow from '@/components/home/HomeJoinUs.vue'
-import Blogs from '../components/home/Blogs.vue'
+import Blogs from '@/components/home/HomeBlogs.vue'
 </script>
 
 <template>
   <AppHeader />
-  <main class="mb-40 space-y-40">
+  <main class="mb-40 space-y-64">
     <Hero />
     <Projects />
     <Purpose />
