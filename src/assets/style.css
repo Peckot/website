@@ -45,4 +45,5 @@
     color-mix(in srgb, color-mix(in srgb, var(--color-black) 92.16%, var(--color-white)) 50%, transparent),
     color-mix(in srgb, var(--color-black) 50%, transparent)
   );
+  --preview-shadow-color: color-mix(in srgb, var(--color-black) 15%, transparent);
 }
