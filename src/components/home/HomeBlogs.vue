@@ -235,15 +235,13 @@ export default {
 </script>
 
 <style>
-@media (prefers-color-scheme: dark) {
-  .bg-blog {
-    background-image: linear-gradient(rgba(20, 20, 20, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/bg_blog.png);
-  }
+.bg-blog {
+  background-image: var(--blog-image-scrim), url(/assets/bg_blog.png);
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   .bg-blog {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)), url(/assets/bg_blog.png);
+    background-image: var(--dark-image-scrim), url(/assets/bg_blog.png);
   }
 }
 </style>

@@ -87,19 +87,34 @@ const projects = [
             />
             <div class="mt-10 space-y-2">
               <h5
-                class="text-2xl font-semibold text-gray-800 transition group-hover:text-secondary dark:text-white group-hover:dark:text-secondarydark"
+                :class="[
+                  'text-2xl font-semibold transition-colors dark:text-white dark:group-hover:text-secondarydark',
+                  project.image
+                    ? 'text-white group-hover:text-secondary-soft'
+                    : 'text-gray-800 group-hover:text-secondary',
+                ]"
               >
                 {{ project.name }}
               </h5>
               <p
-                class="text-gray-700 transition group-hover:text-primary dark:text-gray-300 group-hover:dark:text-[#cc52dd]"
+                :class="[
+                  'transition-colors dark:text-gray-300 dark:group-hover:text-secondarydark-muted',
+                  project.image
+                    ? 'text-gray-100 group-hover:text-secondary-subtle'
+                    : 'text-gray-700 group-hover:text-primary',
+                ]"
               >
                 {{ project.description }}
               </p>
             </div>
             <div
               v-if="project.available"
-              class="mt-auto flex items-center justify-between pt-10 text-gray-800 group-hover:text-secondary dark:text-white group-hover:dark:text-secondarydark"
+              :class="[
+                'mt-auto flex items-center justify-between pt-10 transition-colors dark:text-white dark:group-hover:text-secondarydark',
+                project.image
+                  ? 'text-white group-hover:text-secondary-soft'
+                  : 'text-gray-800 group-hover:text-secondary',
+              ]"
             >
               <span class="text-sm">查看详情</span>
               <svg
@@ -130,12 +145,12 @@ const projects = [
 .bg-project {
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)), var(--project-image);
+  background-image: var(--project-image-scrim), var(--project-image);
 }
 
 @media (prefers-color-scheme: dark) {
   .bg-project {
-    background-image: linear-gradient(rgba(20, 20, 20, 0.5), rgba(0, 0, 0, 0.5)), var(--project-image);
+    background-image: var(--dark-image-scrim), var(--project-image);
   }
 }
 </style>
