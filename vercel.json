@@ -1,10 +1,37 @@
 {
   "installCommand": "corepack pnpm install --frozen-lockfile",
   "buildCommand": "corepack pnpm build",
-  "routes": [
+  "redirects": [
     {
-      "src": "/(about|user)",
-      "dest": "/index.html"
+      "source": "/f/joinus/afdian(/.*)?",
+      "destination": "https://afdian.net/a/PeckotStudios",
+      "permanent": false
+    },
+    {
+      "source": "/f/joinus/bilibili(/.*)?",
+      "destination": "https://space.bilibili.com/637416352",
+      "permanent": false
+    },
+    {
+      "source": "/f/joinus/github(/.*)?",
+      "destination": "https://github.com/Peckot-Studios",
+      "permanent": false
+    },
+    {
+      "source": "/f/joinus/guild(/.*)?",
+      "destination": "https://pd.qq.com/s/7rmk23c56",
+      "permanent": false
+    },
+    {
+      "source": "/f/joinus/qq(/.*)?",
+      "destination": "https://jq.qq.com/?_wv=1027&k=swgeaF42",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(about|user)",
+      "destination": "/index.html"
     }
   ]
 }
