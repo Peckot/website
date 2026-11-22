@@ -4,7 +4,7 @@
   "redirects": [
     {
       "source": "/f/joinus/afdian(/.*)?",
-      "destination": "https://afdian.net/a/PeckotStudios",
+      "destination": "https://afdian.com/a/Pectics",
       "permanent": false
     },
     {
@@ -14,7 +14,7 @@
     },
     {
       "source": "/f/joinus/github(/.*)?",
-      "destination": "https://github.com/Peckot-Studios",
+      "destination": "https://github.com/Peckot",
       "permanent": false
     },
     {
