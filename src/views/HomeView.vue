@@ -3,9 +3,9 @@ import AppHeader from '@/components/layout/AppHeader.vue'
 import AppFooter from '@/components/layout/AppFooter.vue'
 import Purpose from '../components/home/Purpose.vue'
 import Projects from '../components/home/Projects.vue'
-import Hero from '../components/home/Hero.vue'
+import Hero from '@/components/home/HomeHero.vue'
 import Feedback from '../components/home/Feedback.vue'
-import JoinNow from '../components/home/JoinNow.vue'
+import JoinNow from '@/components/home/HomeJoinUs.vue'
 import Blogs from '../components/home/Blogs.vue'
 </script>
 

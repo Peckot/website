@@ -1,3 +1,7 @@
+<script setup>
+import HomeButton from '@/components/ui/HomeButton.vue'
+</script>
+
 <template>
   <div class="relative py-40">
     <div
@@ -24,7 +28,7 @@
             width="220"
             height="220"
             src="https://q1.qlogo.cn/g?b=qq&nk=3492772281&s=160"
-            alt="Bill_Zhong"
+            alt="AkiraNyx"
             class="h-12 w-12 rounded-full object-cover"
             draggable="false"
           />
@@ -43,7 +47,7 @@
             height="220"
             src="https://th.bing.com/th/id/R.07f468b53c25821ba3e6f132d6d25bd8?rik=DErpDe5xln0zkQ&riu=http%3a%2f%2fphotos.tuchong.com%2f280990%2ff%2f3418241.jpg&ehk=VPbVmeTbGYp4eM04ruObNwuRl2Isjytt%2fRaPEoC4Gy4%3d&risl=&pid=ImgRaw&r=0"
             alt="############"
-            class="relative z-10 h-12 w-12 rounded-full object-cover"
+            class="z-10 h-12 w-12 rounded-full object-cover"
             draggable="false"
           />
           <img
@@ -62,41 +66,8 @@
             加入 Peckot Studios 的行列，成为我们所期待的<span class="font-bold">优秀开发者</span>。
           </p>
           <div class="flex flex-wrap justify-center gap-6">
-            <a
-              href="/signin"
-              :class="[
-                // 按钮布局
-                'relative flex h-12 w-full items-center justify-center px-8 sm:w-max',
-
-                // 背景层
-                'before:absolute before:inset-0 before:rounded-full before:bg-primary',
-                'before:dark:bg-primarydark',
-
-                // 交互动效
-                'before:transition before:duration-300 hover:before:scale-110',
-                'active:duration-75 active:before:scale-95',
-              ]"
-            >
-              <span class="dark:text-dark relative text-base font-semibold text-white">加入我们</span>
-            </a>
-            <a
-              href="/about"
-              :class="[
-                // 按钮布局
-                'relative flex h-12 w-full items-center justify-center px-8 sm:w-max',
-
-                // 背景层
-                'before:absolute before:inset-0 before:rounded-full before:border',
-                'before:border-transparent before:bg-primary/10 before:bg-gradient-to-b',
-                'dark:before:border-gray-700 before:dark:bg-primarydark/10 dark:before:bg-gray-800',
-
-                // 交互动效
-                'before:transition before:duration-300 hover:before:scale-110',
-                'active:duration-75 active:before:scale-95',
-              ]"
-            >
-              <span class="relative text-base font-semibold text-primary dark:text-white">关于我们</span>
-            </a>
+            <HomeButton text="加入我们" link="/signup" :primary="true" />
+            <HomeButton text="关于我们" link="/about" />
           </div>
         </div>
       </div>
