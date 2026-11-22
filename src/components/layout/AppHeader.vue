@@ -6,10 +6,11 @@
           <input id="toggle_nav" aria-hidden="true" type="checkbox" name="toggle_nav" class="peer hidden" />
           <div class="relative z-20 flex w-full justify-between md:px-0 bg:w-max">
             <a href="/" aria-label="logo" class="flex items-center space-x-2">
-              <div aria-hidden="true" class="flex">
-                <img class="h-10" src="/logo.svg" alt="Peckot" draggable="false" />
-              </div>
-              <span class="text-3xl font-bold text-gray-900 dark:text-white">Peckot Studios</span>
+              <span
+                aria-hidden="true"
+                class="size-10 shrink-0 bg-primary mask-[url(/logo.svg)] mask-contain dark:bg-primarydark"
+              ></span>
+              <span class="-ml-4 text-3xl font-bold text-gray-900 dark:text-white">eckot Studios</span>
             </a>
             <div class="relative flex max-h-10 items-center bg:hidden">
               <label id="hamburger" role="button" for="toggle_nav" aria-label="humburger" class="relative -mr-6 p-6">

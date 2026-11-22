@@ -8,12 +8,14 @@
   --breakpoint-xl: 80rem;
   --breakpoint-2xl: 96rem;
 
-  --color-primary: #e14819;
-  --color-secondary: #dd8e44;
+  --color-primary: #f05a24;
+  --color-secondary: #e87919;
   --color-primarydark: #9333ea;
   --color-secondarydark: #ee74ff;
   --color-info: #0c63e7;
 
+  --color-white: #fff;
+  --color-black: #000;
   --color-gray-50: #fafafc;
   --color-gray-100: #e9e9ec;
   --color-gray-200: #c6c8cd;
