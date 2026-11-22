@@ -24,14 +24,14 @@ defineProps({
       'before:absolute before:inset-0 before:rounded-full',
 
       primary
-        ? 'before:bg-primary before:dark:bg-primarydark'
-        : 'before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b ' +
-          'dark:before:border-gray-700 before:dark:bg-primarydark/10 dark:before:bg-gray-800',
+        ? 'text-white before:bg-primary dark:before:bg-primarydark'
+        : 'text-primary before:border before:border-primary/20 before:bg-primary/10 ' +
+          'dark:text-white dark:before:border-gray-700 dark:before:bg-gray-800',
 
       'before:transition before:duration-300 hover:before:scale-110',
       'active:duration-75 active:before:scale-95',
     ]"
   >
-    <span class="relative text-base font-semibold text-white">{{ text }}</span>
+    <span class="relative text-base font-semibold">{{ text }}</span>
   </a>
 </template>

@@ -6,10 +6,12 @@ import HomeButton from '@/components/ui/HomeButton.vue'
   <section class="relative">
     <div
       aria-hidden="true"
-      class="absolute inset-0 m-auto grid h-max w-full grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
+      class="absolute inset-0 m-auto grid h-max w-full grid-cols-2 -space-x-52 opacity-30 dark:opacity-20"
     >
-      <div class="h-56 bg-gradient-to-br from-primary to-orange-400 blur-[106px] dark:from-blue-700"></div>
-      <div class="h-32 bg-gradient-to-r from-yellow-400 to-red-300 blur-[106px] dark:to-indigo-600"></div>
+      <div
+        class="h-56 bg-gradient-to-br from-orange-300 to-orange-200 blur-[106px] dark:from-blue-700 dark:to-orange-400"
+      ></div>
+      <div class="h-32 bg-gradient-to-r from-yellow-400 to-rose-200 blur-[106px] dark:to-indigo-600"></div>
     </div>
     <div class="mx-auto w-full max-w-7xl px-6 md:px-12 xl:px-6">
       <div class="relative">
@@ -61,7 +63,7 @@ import HomeButton from '@/components/ui/HomeButton.vue'
           />
         </div>
         <div class="m-auto space-y-6 md:w-8/12 lg:w-7/12">
-          <h1 class="mt-6 text-center text-4xl font-bold text-gray-800 md:text-5xl dark:text-white">即刻加入</h1>
+          <h1 class="mt-6 text-center text-4xl font-bold text-gray-900 md:text-5xl dark:text-white">即刻加入</h1>
           <p class="text-center text-xl text-gray-600 dark:text-gray-300">
             加入 Peckot Studios 的行列，成为我们所期待的<span class="font-bold">优秀开发者</span>。
           </p>

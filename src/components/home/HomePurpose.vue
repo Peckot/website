@@ -18,7 +18,7 @@
               clip-rule="evenodd"
             />
           </svg>
-          <h2 class="my-8 text-2xl font-bold text-gray-700 md:text-4xl dark:text-white">我们的组织方式</h2>
+          <h2 class="my-8 text-2xl font-bold text-gray-900 md:text-4xl dark:text-white">我们的组织方式</h2>
           <div class="text-lg text-gray-600 dark:text-gray-300">
             <p class="my-3">
               我们因共同的兴趣与热爱相聚，以项目为纽带自由协作，<br />让每一位成员都能参与讨论、分享想法并发挥所长。

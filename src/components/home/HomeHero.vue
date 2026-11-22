@@ -25,13 +25,11 @@ const intros = [
 <template>
   <section class="relative">
     <!-- Background illustration start -->
-    <div aria-hidden="true" class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+    <div aria-hidden="true" class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-30 dark:opacity-20">
       <div
-        class="h-56 bg-gradient-to-br from-primary to-orange-400 blur-[106px] dark:from-blue-700 dark:to-purple-400"
+        class="h-56 bg-gradient-to-br from-orange-300 to-orange-200 blur-[106px] dark:from-blue-700 dark:to-purple-400"
       ></div>
-      <div
-        class="dark:from-primarydark-400 h-32 bg-gradient-to-r from-yellow-400 to-red-300 blur-[106px] dark:to-indigo-600"
-      ></div>
+      <div class="h-32 bg-gradient-to-r from-yellow-400 to-rose-200 blur-[106px] dark:to-indigo-600"></div>
     </div>
     <!-- Background illustration end -->
 

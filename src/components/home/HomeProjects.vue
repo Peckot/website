@@ -44,7 +44,7 @@ const projects = [
             clip-rule="evenodd"
           />
         </svg>
-        <h2 class="my-4 text-2xl font-bold text-gray-700 md:my-8 md:text-4xl dark:text-white">我们的在营项目</h2>
+        <h2 class="my-4 text-2xl font-bold text-gray-900 md:my-8 md:text-4xl dark:text-white">我们的在营项目</h2>
         <p class="text-lg text-gray-600 dark:text-gray-300">由 Peckot Studios 开发或维护的相关作品或产品</p>
       </div>
       <div
